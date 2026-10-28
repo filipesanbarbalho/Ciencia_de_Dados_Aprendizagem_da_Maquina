@@ -7,7 +7,7 @@
 | **Turma**        | Sistemas de Informação     |
 | **Data**         | 19/08                      |
 | **Equipe**       |                            |
-| **Integrante 1** | Maria Eduarda G. Rodrigues |
+| **Integrante 1** | Filipe Santos Barbalho     |
 | **Integrante 2** |                            |
 | **Integrante 3** |                            |
 | **Integrante 4** |                            |
