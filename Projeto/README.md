@@ -4,7 +4,7 @@ Repositório oficial do trabalho acadêmico e técnico voltado para a análise e
 
 ---
 
-## 🌍 Contextualização da Bacia do Rio Negro
+## Contextualização da Bacia do Rio Negro
 A Bacia do Rio Negro é uma das bacias hidrográficas mais importantes da Amazônia, abrangendo ecossistemas críticos, terras indígenas e centros urbanos e ribeirinhos de grande relevância geopolítica e ambiental. Os municípios contemplados neste estudo são:
 * **Barcelos**
 * **Manaus**
@@ -13,7 +13,7 @@ A Bacia do Rio Negro é uma das bacias hidrográficas mais importantes da Amazô
 
 ---
 
-## 🎯 Objetivos do Projeto
+##  Objetivos do Projeto
 
 ### 1. Objetivos de Negócio
 * **Planejamento Urbano e Regional:** Fornecer projeções demográficas confiáveis para subsidiar o dimensionamento de infraestrutura básica (saneamento, energia, habitação) e serviços públicos.
@@ -28,7 +28,7 @@ A Bacia do Rio Negro é uma das bacias hidrográficas mais importantes da Amazô
 
 ---
 
-## 📊 Descrição do Dataset
+##  Descrição do Dataset
 O conjunto de dados base (`tabela_final_rio_negro.csv`) contém as seguintes colunas:
 * `ID`: Identificador único da linha.
 * `Município`: Nome do município da bacia.
@@ -43,7 +43,7 @@ O conjunto de dados base (`tabela_final_rio_negro.csv`) contém as seguintes col
 
 ---
 
-## 🛠️ Estrutura do Repositório
+##  Estrutura do Repositório
 ```text
 .
 ├── data/
