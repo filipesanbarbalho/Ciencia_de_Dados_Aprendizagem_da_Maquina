@@ -1,50 +1,43 @@
-# Modelagem Preditiva de Crescimento Populacional e Demográfico na Bacia do Rio Negro
+Modelagem Preditiva de Crescimento Populacional na Bacia do Rio Negro
 
-Repositório oficial do trabalho acadêmico e técnico voltado para a análise estatística, engenharia de dados e modelagem preditiva do crescimento populacional nos municípios da Bacia do Rio Negro, desenvolvido sob a metodologia **CRISP-DM (Cross-Industry Standard Process for Data Mining)**.
+Repositório de um trabalho acadêmico sobre análise estatística, engenharia de dados e modelagem preditiva do crescimento populacional em municípios da Bacia do Rio Negro, desenvolvido com a metodologia CRISP-DM (Cross-Industry Standard Process for Data Mining).
 
----
+Contextualização
 
-## Contextualização da Bacia do Rio Negro
-A Bacia do Rio Negro é uma das bacias hidrográficas mais importantes da Amazônia, abrangendo ecossistemas críticos, terras indígenas e centros urbanos e ribeirinhos de grande relevância geopolítica e ambiental. Os municípios contemplados neste estudo são:
-* **Barcelos**
-* **Manaus**
-* **Santa Isabel do Rio Negro**
-* **São Gabriel da Cachoeira**
+A Bacia do Rio Negro é uma das bacias hidrográficas mais importantes da Amazônia. Abrange ecossistemas sensíveis, terras indígenas e centros urbanos e ribeirinhos. Os municípios incluídos neste estudo são:
 
----
+Barcelos
+Manaus
+Santa Isabel do Rio Negro
+São Gabriel da Cachoeira
+Objetivos
+Objetivos de negócio
+Planejamento urbano e regional: oferecer projeções demográficas que possam contribuir para discussões sobre infraestrutura básica (saneamento, energia, habitação) e serviços públicos.
+Recursos hídricos e ambientais: fazer uma estimativa inicial da pressão da população sobre os recursos hídricos e as áreas de preservação da bacia.
+Políticas públicas: comparar o crescimento entre áreas urbanas e rurais, como apoio à reflexão sobre a alocação de recursos sociais e assistenciais.
+Metas técnicas
+Reunir uma base de dados estruturada a partir de fontes oficiais (tabela_final_rio_negro.csv).
+Montar um pipeline de engenharia de atributos com taxas de crescimento anual e proporções demográficas.
+Desenvolver e comparar modelos de regressão e machine learning (Regressão Linear, Random Forest e Crescimento Exponencial), tendo como referência MAPE abaixo de 10% e R² acima de 0,85.
+Disponibilizar o código de forma reprodutível.
 
-##  Objetivos do Projeto
+Nota: como há poucos anos de referência por município, as metas de desempenho são um ponto de partida e os resultados devem ser interpretados com cautela.
 
-### 1. Objetivos de Negócio
-* **Planejamento Urbano e Regional:** Fornecer projeções demográficas confiáveis para subsidiar o dimensionamento de infraestrutura básica (saneamento, energia, habitação) e serviços públicos.
-* **Gestão de Recursos Hídricos e Ambientais:** Estimar a pressão antrópica sobre os recursos hídricos e áreas de preservação na bacia.
-* **Políticas Públicas Direcionadas:** Avaliar o diferencial de crescimento entre áreas urbanas e rurais para otimizar a alocação de recursos sociais e assistenciais.
+Descrição do dataset
 
-### 2. Metas Técnicas
-* Consolidar uma base de dados estruturada a partir de fontes oficiais (`tabela_final_rio_negro.csv`).
-* Executar pipeline de engenharia de atributos calculando taxas de crescimento anual e proporções demográficas.
-* Desenvolver e comparar modelos de machine learning e regressão estatística (Regressão Linear, Random Forest e Crescimento Exponencial) com Erro Percentual Absoluto Médio ($MAPE < 10\%$) e $R^2 > 0.85$.
-* Disponibilizar artefatos reprodutíveis e prontos para implantação.
+O arquivo tabela_final_rio_negro.csv contém as colunas:
 
----
-
-##  Descrição do Dataset
-O conjunto de dados base (`tabela_final_rio_negro.csv`) contém as seguintes colunas:
-* `ID`: Identificador único da linha.
-* `Município`: Nome do município da bacia.
-* `Estado`: Unidade federativa (Amazonas).
-* `Ano`: Ano de referência (ex: 2010, 2022, 2024).
-* `Localidade`: Categoria espacial (`Urbana`, `Rural`, `Total`).
-* `Tipo de informação`: Métrica demográfica (`População`, `Demografia`, `Domicílios`, `Deslocamento`).
-* `Quantidade`: Valor numérico da métrica.
-* `Unidade`: Unidade de medida (`Pessoas`, etc.).
-* `Fonte`: Origem oficial dos dados (IBGE - Censo Demográfico e SIDRA).
-* `Código IBGE`: Código oficial de identificação municipal.
-
----
-
-##  Estrutura do Repositório
-```text
+ID: identificador único da linha.
+Município: nome do município da bacia.
+Estado: unidade federativa (Amazonas).
+Ano: ano de referência (por exemplo, 2010, 2022, 2024).
+Localidade: categoria espacial (Urbana, Rural ou Total).
+Tipo de informação: métrica demográfica (População, Demografia, Domicílios ou Deslocamento).
+Quantidade: valor numérico da métrica.
+Unidade: unidade de medida (Pessoas, etc.).
+Fonte: origem dos dados (IBGE - Censo Demográfico e SIDRA).
+Código IBGE: código de identificação do município.
+Estrutura do repositório
 .
 ├── data/
 │   └── tabela_final_rio_negro.csv
